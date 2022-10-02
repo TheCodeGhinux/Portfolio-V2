@@ -1,0 +1,163 @@
+/* @font-face {
+    font-family: merriweather;
+    src: url(./Merriweather/Merriweather-Black.ttf);
+    src: url(./Merriweather/Merriweather-Regular.ttf);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-bg : var(--color-blue);
+    --color-bg-variant: #030136;
+    --color-primary: var(--color-blue);
+    --color-primary-variant: rgba(245, 98, 45, 0.2);
+    --color-white: #fff;
+    --color-light: var(--color-blue);
+    --color-orange-variant: rgba(204, 27, 27, 0.5);
+    --color-blue:#030136;
+    --color-blue-variant: #e3e3ee;
+    --color-orange:#e4460b;
+
+
+    --transition: all 400ms ease ;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+
+}
+
+html {
+    scroll-behavior: calc();
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background: var(--color-white);
+    color: var(--color-blue);
+    line-break: 1.7;
+    /* background-image: url(../src/assets/bg-texture.png); */
+}
+
+/* GENERAL STYLES */
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    
+
+}
+h1 {
+    font-size: 2.5rem;
+
+}
+
+section {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+section > h2, 
+section >h5 {
+    text-align: center;
+    color: var(--color-light);
+    
+}
+
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+    border: 1px solid var(--color-blue);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-blue);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px, solid, var(--color-blue);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-orange);
+    border-color: var(--color-blue);
+}
+
+.btn-primary {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and(max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+
+}
+
+@media screen and(max-width: 600px) {
+    .container {
+        width: var(--container-width-ms);
+
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+}
