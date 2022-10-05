@@ -54,10 +54,6 @@
     margin-bottom: 1rem;
 }
 
-/* .about-content p {
-    margin: 1.2rem;
-} */
-
 .about-card h5 {
     font-size: 0.95rem;
 }
@@ -101,9 +97,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .about-content p{
-        margin: 1rem 0 1.5rem;
-    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -128,7 +121,4 @@
         margin: .5rem 0;
     }
 
-    /* .about-content p {
-        margin: 1.5rem 0;
-    } */
 }
