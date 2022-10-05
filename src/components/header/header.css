@@ -79,12 +79,8 @@ header {
 
 /* IMAGE */
 .me {
-    /* background: var(--color-primary); */
     width: auto;
-    /* height: 30rem; */
-    /* position: absolute; */
     left: calc(50% - 11rem);
-    /* border-radius: 12rem 12rem 0 0; */
     overflow: hidden;
     padding: 1rem 2.5rem 0 2.5rem;
 }
