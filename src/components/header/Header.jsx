@@ -21,10 +21,10 @@ const Header = () => {
                 4000,
                 'Machine Learning Engineer',
                 4000,
-                'Front-end Developer',
+                'Back-end Developer',
                 4000,
-                'Cybersec Analyst',
-                4000,
+                // 'Cybersec Analyst',
+                // 4000,
                 '!Nerd',
                 4000,
                 () => {
@@ -38,9 +38,9 @@ const Header = () => {
             />
           </div>
           <CTA />
-          <div className="me">
+          {/* <div className="me">
             <img src={ME} alt="me" />
-          </div>
+          </div> */}
        </div>
         
         <HeaderSocials />
