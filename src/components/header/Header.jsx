@@ -13,7 +13,7 @@ const Header = () => {
           <h5>Hi, I'm</h5>
           <h2 className='name' >Ayomide Ilesanmi</h2>
           <h2 className='alias' >The Code Ghinux</h2>
-          
+
           <div className='animation-div' >
             <TypeAnimation
               sequence={[

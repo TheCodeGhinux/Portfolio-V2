@@ -4,6 +4,7 @@ import IMG1 from'../../assets/portfolio1.jpg'
 import IMG2 from'../../assets/portfolio2.jpg'
 import IMG7 from'../../assets/store-api.png'
 import IMG3 from '../../assets/pharmanagerapi.png';
+
 import IMG4 from'../../assets/watermark.jfif'
 import IMG5 from'../../assets/store.png'
 import IMG6 from'../../assets/twitter.png'
