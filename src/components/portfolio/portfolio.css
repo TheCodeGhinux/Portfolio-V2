@@ -1,0 +1,139 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  background: var(--color-bg-variant);
+  /* padding: 1.2rem;
+    border-radius: 2rem; */
+  transition: var(--transition);
+}
+
+/* .portfolio-item:hover {
+    border-color: var(--color-text-primary-variant);
+    background: transparent;
+} */
+
+.light .portfolio-item .btn {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-text-primary);
+}
+
+.dark .portfolio-item .btn {
+  color: var(--color-text-primary);
+  background-color: var(--color-text-primary);
+  border: 1px solid var(--color-text-primary);
+}
+
+.portfolio-item-image {
+  /* border-radius: 1.5rem 1.5rem 0rem 0rem; */
+  overflow: hidden;
+}
+
+.portfolio-item-image img {
+  height: 11.5rem;
+  /* object-fit: contain; */
+}
+
+.portfolio-text h3 {
+  color: var(--color-text-primary);
+}
+
+.portfolio-item-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem 1rem;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.desc {
+  font-size: 1.1em;
+  /* background: var(--color-text-primary); */
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.light .desc,
+.light h3 {
+  color: var(--color-text-primary-variant);
+}
+
+.dark .desc,
+.dark h3 {
+  color: #e3e3ee;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    padding: 0.5rem !important;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    column-gap: auto;
+  }
+
+  .portfolio-item {
+    font-size: 0.6em;
+    padding: 0rem;
+    /* border-radius: 1rem; */
+  }
+
+  .portfolio-item-image {
+    /* border-radius: .9rem .9rem 0rem 0rem; */
+    overflow: hidden;
+  }
+
+  .portfolio-item-image img {
+    height: 7rem;
+    /* object-fit: contain; */
+  }
+
+  .portfolio-text {
+    padding: 0 0.5rem;
+  }
+
+  .portfolio-item h3 {
+    text-align: center;
+  }
+
+  .portfolio-item .btn {
+    padding: 0.4rem;
+    font-size: 1.2em;
+  }
+
+  .portfolio-item-cta {
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 0rem 0.5rem;
+    justify-content: space-between;
+  }
+}
