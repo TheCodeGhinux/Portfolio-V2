@@ -91,7 +91,7 @@ const Experience = (props) => {
             <article className="experience-details">
               <BsPatchCheckFill className='experience-details-icon' />
               <div>
-                <h4>JAVASCRIPT</h4>
+                <h4>JS</h4>
                 <small className="experience-details" >Experienced</small>
               </div>
             </article>

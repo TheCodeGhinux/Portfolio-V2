@@ -47,7 +47,7 @@
 .experience-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  gap: 2rem;
 }
 
 .experience-details {
@@ -58,6 +58,8 @@
 .experience-details-icon {
   margin-top: 6px;
   color: var(--color-text-primary);
+  min-width: 2rem;
+  min-height: 2rem;
 }
 
 /* MEDIA QUERIES */
