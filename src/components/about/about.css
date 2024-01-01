@@ -46,10 +46,16 @@
 }
 
 .about-card:hover {
-  background: transparent;
+  background: #a6a6c2;
+  backdrop-filter: blur(15px);
   border-color: var(--color-text-primary-variant);
   cursor: default;
   color: var(--color-orange);
+}
+
+.dark .about-card:hover {
+  background: rgb(3 1 54 / 79%);
+  /* backdrop-filter: blur(15px); */
 }
 
 .about-icon {

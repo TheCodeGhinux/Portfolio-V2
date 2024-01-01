@@ -5,6 +5,14 @@
   margin-bottom: 4rem;
 }
 
+/* .experience-container h3 {
+  color: var(--color-text-primary);
+} */
+
+/* .light .experience-container h3 {
+  color: var(--color-text-primary);
+} */
+
 .experience-container > div {
   background: var(--color-text-primary-variant);
   padding: 2.4rem 3rem;
@@ -15,15 +23,22 @@
 
 .experience-container > div:hover {
   /* background: transparent; */
+  background: #a6a6c2;
   /* border-color: var(--color-text-primary-variant); */
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(9px);
+  /* backdrop-filter: blur(9px); */
   cursor: default;
 }
 
-.light .experience-container > div:hover {
+/* .light .experience-container > div:hover {
+  background: #a6a6c2;
   border-color: var(--color-text-primary-variant);
-}
+} */
+
+/* background: #a6a6c2;
+.dark .about-card:hover {
+  background: rgb(3 1 54 / 79%);
+  /* backdrop-filter: blur(15px); */
+/* }  */
 
 .experience-container h3 {
   padding: 1rem;

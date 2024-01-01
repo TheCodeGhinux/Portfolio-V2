@@ -38,7 +38,7 @@
 .dark {
   --bg-color: #2c3036;
   --color-text-primary: #a8a8b7;
-  /* --color-text-primary-variant: #02011d; */
+  --color-text-primary-variant: #030136;
   --color-text-primary: #e3e3ee;
 }
 
@@ -123,6 +123,8 @@ a:hover {
   transition: var(--transition);
 }
 
+
+
 .btn:hover {
   background: var(--color-text-primary);
   color: var(--color-orange);
@@ -130,8 +132,8 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-bg);
-  color: #f9f9f9;
+  background: var(--color-text-primary);
+  color: var(--color-text-primary-variant);
 }
 
 img {
@@ -150,7 +152,7 @@ img {
 
 @media screen and(max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    /* width: var(--container-width-md); */
   }
 
   section {

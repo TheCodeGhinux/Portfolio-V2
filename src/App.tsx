@@ -10,6 +10,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 // import DarkModeToggle from './DarkModeToggle'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import Layout from './components/layout/Layout'
 
 const App = () => {
   // const location = useLocation()
@@ -26,32 +27,36 @@ const App = () => {
 
   const styles = {
     bg: {
-      background: darkMode ? '#353b42' : '#f9f9f9',
+      background: darkMode ? '#282c30' : '#f0f0f0',
+    },
+
+    layout_bg: {
+      background: darkMode ? '#353b42' : '#ffffff',
     },
   }
 
   return (
     <>
-      <div
-      style={styles.bg}
-      >
+      <div style={styles.bg}>
         {/* <DarkModeToggle toggleDarkMode={toggleDarkMode} isDarkMode={darkMode} /> */}
+        <Layout style={styles.layout_bg}>
+          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <div className='layout-con'>
+            <About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Experience darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Portfolio darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          </div>
+        </Layout>
         <DarkModeSwitch
-        className='toggle'
-          style={{ marginBottom: '2rem'  }}
+          className='toggle'
+          style={{ marginBottom: '2rem' }}
           checked={darkMode}
           onChange={toggleDarkMode}
           size={50}
         />
 
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <div className='layout-con'>
-          <About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <Experience darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <Portfolio darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        </div>
         <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
       {/* <Services /> */}

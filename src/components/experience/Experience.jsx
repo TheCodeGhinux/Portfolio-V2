@@ -2,7 +2,7 @@ import React from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
-import '../services/services.css'
+// import '../services/services.css'
 import {BiCheck} from 'react-icons/bi'
 
 
