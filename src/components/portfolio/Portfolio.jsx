@@ -5,7 +5,7 @@ import IMG2 from'../../assets/portfolio2.jpg'
 import IMG7 from'../../assets/store-api.png'
 import IMG3 from '../../assets/pharmanagerapi.png';
 
-import IMG4 from'../../assets/watermark.jfif'
+import IMG4 from'../../assets/tribalprint.png'
 import IMG5 from'../../assets/store.png'
 import IMG6 from'../../assets/twitter.png'
 
@@ -14,6 +14,14 @@ import IMG6 from'../../assets/twitter.png'
 // import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 const data = [
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Tribalprint',
+    desc: 'An API built with NestJS. A service for printing and branding.',
+    github: '',
+    demo: 'https://tribalprint.com.ng/',
+  },
   {
     id: 1,
     image: IMG1,
@@ -39,14 +47,6 @@ const data = [
     demo: 'https://pharmanager-api.onrender.com/',
   },
   {
-    id: 4,
-    image: IMG4,
-    title: 'Image Watermarking GUI',
-    desc: 'A python preogram to watermark images',
-    github: 'https://github.com/thecodeghinux/watermark-app',
-    demo: 'https://github.com/thecodeghinux/watermark-app',
-  },
-  {
     id: 5,
     image: IMG5,
     title: 'Gadget Store Website',
@@ -70,7 +70,7 @@ const data = [
     github: 'https://github.com/thecodeghinux/web3-landing-page',
     demo: 'https://tcg-web3.netlify.app/',
   },
-];
+]
 // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 // const FadeUp = batch(Fade(), Move(), Sticky());
 
@@ -97,7 +97,7 @@ const Portfolio = (props) => {
                   Github
                 </a>
                 <a href={demo} className='btn btn-primary'>
-                  Live Demo
+                  Link
                 </a>
               </div>
             </article>
