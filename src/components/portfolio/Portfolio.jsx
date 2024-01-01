@@ -5,7 +5,7 @@ import IMG2 from'../../assets/portfolio2.jpg'
 import IMG7 from'../../assets/store-api.png'
 import IMG3 from '../../assets/pharmanagerapi.png';
 
-import IMG4 from'../../assets/tribalprint.png'
+import IMG4 from'../../assets/tribalprint-img.png'
 import IMG5 from'../../assets/store.png'
 import IMG6 from'../../assets/twitter.png'
 
@@ -27,7 +27,7 @@ const data = [
     image: IMG1,
     title: 'Stock price Prediction',
     desc: 'A machine learning model for predicting stock prices',
-    github: 'https://github.com/thecodeghinux/stock-price-prediction',
+    github: 'https://github.com/thecodeghinux',
     demo: 'https://github.com/thecodeghinux/stock-price-prediction',
   },
   {
@@ -42,7 +42,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'Pharmanager API',
-    desc: 'A pharamcy management API built on NodeJs ExpressJs to manage a phamarcy backend server',
+    desc: 'A pharmacy management API built on NodeJs ExpressJs to manage a pharmacy backend server',
     github: 'https://github.com/TheCodeGhinux/pharmanager-backend',
     demo: 'https://pharmanager-api.onrender.com/',
   },
@@ -82,7 +82,8 @@ const Portfolio = (props) => {
       <h2>Portfolio</h2>
 
       <div className='container portfolio-container'>
-        {data.map(({ id, image, title, desc, github, demo }) => {
+        {data.map(({ id, image, title, desc, github, isDisabled, demo }) => {
+          const isGithubDisabled = github === ''
           return (
             <article key={id} className='portfolio-item'>
               <div className='portfolio-item-image'>
@@ -93,7 +94,11 @@ const Portfolio = (props) => {
                 <h5 className='desc'>{desc}</h5>
               </div>
               <div className='portfolio-item-cta'>
-                <a href={github} className='btn'>
+                <a
+                  href={github}
+                  className={`btn${isGithubDisabled ? ' disabled' : ''}`}
+                  disabled={isGithubDisabled}
+                >
                   Github
                 </a>
                 <a href={demo} className='btn btn-primary'>
