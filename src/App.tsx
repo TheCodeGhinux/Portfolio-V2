@@ -15,7 +15,7 @@ import Layout from './components/layout/Layout'
 const App = () => {
   // const location = useLocation()
 
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   // const toggleDarkMode = () => {
   //   setDarkMode(prevDarkMode => !prevDarkMode)
@@ -30,6 +30,7 @@ const App = () => {
       background: darkMode ? '#282c30' : '#f0f0f0',
     },
 
+
     layout_bg: {
       background: darkMode ? '#353b42' : '#ffffff',
     },
@@ -37,7 +38,7 @@ const App = () => {
 
   return (
     <>
-      <div style={styles.bg}>
+      <div className='app' style={styles.bg}>
         {/* <DarkModeToggle toggleDarkMode={toggleDarkMode} isDarkMode={darkMode} /> */}
         <Layout style={styles.layout_bg}>
           <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
@@ -49,6 +50,8 @@ const App = () => {
             <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           </div>
         </Layout>
+
+        <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <DarkModeSwitch
           className='toggle'
           style={{ marginBottom: '2rem' }}
@@ -56,8 +59,6 @@ const App = () => {
           onChange={toggleDarkMode}
           size={50}
         />
-
-        <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
       {/* <Services /> */}
       {/* <Testimonials /> */}

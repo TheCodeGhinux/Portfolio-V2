@@ -3,10 +3,10 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/ghaj2.jpg'
 import HeaderSocials from './HeaderSocials'
-import {TypeAnimation} from 'react-type-animation'
+import { TypeAnimation } from 'react-type-animation'
 // import DarkModeToggle from '../../DarkModeToggle'
 
-const Header = (props) => {
+const Header = (props: { darkMode: any }) => {
   const [isDark, setIsDark] = useState(true)
   return (
     <header
@@ -43,7 +43,7 @@ const Header = (props) => {
               style={{ fontSize: '2em' }}
             />
           </div>
-          <CTA />
+          <CTA props={props} />
           {/* <div className="me">
             <img src={ME} alt="me" />
           </div> */}

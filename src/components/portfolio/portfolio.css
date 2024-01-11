@@ -1,3 +1,7 @@
+#portfolio {
+  padding: 3rem 0px;
+}
+
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,10 +19,14 @@
   transition: var(--transition);
 }
 
-/* .portfolio-item:hover {
-    border-color: var(--color-text-primary-variant);
-    background: transparent;
-} */
+.portfolio-item:hover {
+    /* border-color: var(--color-text-primary-variant);
+    background: transparent; */
+    transform: scale(1.1);
+}
+.dark .portfolio-item {
+  background: #282c30;
+}
 
 .light .portfolio-item .btn {
   background-color: #e3e3ee;

@@ -1,3 +1,8 @@
+#contact {
+  padding: 3rem 0px;
+  font-size: 1.3rem;
+}
+
 .container.contact-container {
   /* width: 58%; */
   display: grid;
@@ -48,10 +53,14 @@
   color: var(--color-orange);
 }
 
+.dark .contact-option h4 {
+  color: #f0f0f0;
+}
+
 .contact-option a {
   margin-top: 0.7rem;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 /* FORM */

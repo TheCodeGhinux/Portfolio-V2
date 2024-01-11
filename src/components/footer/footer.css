@@ -1,9 +1,24 @@
-footer {
-  background: var(--color-text-primary);
-  padding: 3rem 0;
+.footer {
+  /* background: var(--color-text-primary); */
+  color: var(--color-text-primary);
+  padding: 5rem 0;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+.light.footer {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+
+.footer.dark, .footer.dark a {
+  color: var(--color-text-primary) !important;
+}
+
+.footer.dark, .footer.dark a:hover {
+  color: #fff !important;
 }
 
 footer a {
@@ -33,8 +48,8 @@ footer a {
 }
 
 .footer-socials a {
-  background: var(--color-bg);
-  color: var(--color-text-primary);
+  /* background: var(--color-bg); */
+  /* color: var(--color-text-primary); */
   padding: 0.4rem;
   border-radius: 0.3rem;
   display: flex;
@@ -43,8 +58,8 @@ footer a {
 
 .footer-socials a:hover {
   background: transparent;
-  color: var(--color-orange);
-  border-color: var(--color-bg);
+  color: var(--color-orange-variant);
+  /* border-color: var(--color-bg); */
 
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(9px);

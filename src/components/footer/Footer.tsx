@@ -5,9 +5,9 @@ import {BsFillSuitHeartFill} from 'react-icons/bs'
 import {FiTwitter} from 'react-icons/fi'
 import {FiInstagram} from 'react-icons/fi'
 
-const Footer = () => {
+const Footer = (props: { darkMode: any }) => {
   return (
-    <section id='Footer'>
+    <section className={`${props.darkMode ? 'dark' : 'light'} footer`} id='Footer'>
       <footer>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href='#' className='footer-logo'>
@@ -36,9 +36,7 @@ const Footer = () => {
         </ul>
 
         <div className='footer-socials'>
-          <a href='https://linkedin.com/in/giy'>
-            {/* <BsLinkedin /> */}
-          </a>
+          <a href='https://linkedin.com/in/giy'>{/* <BsLinkedin /> */}</a>
           <a href='https://instagram.com/Ayoflagos'>
             <FiTwitter />
           </a>

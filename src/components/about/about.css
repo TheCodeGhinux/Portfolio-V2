@@ -1,3 +1,7 @@
+#about {
+  padding: 3rem 0px;
+}
+
 .about-container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -54,10 +58,11 @@
   border-color: var(--color-text-primary-variant);
   cursor: default;
   color: var(--color-orange);
+  transform: scale(1.1);
 }
 
 .dark .about-card:hover {
-  background: rgb(3 1 54 / 79%);
+  background: var(--color-orange);
   /* backdrop-filter: blur(15px); */
 }
 
@@ -94,6 +99,7 @@
 
 .about-content p {
   text-align: start;
+  font-size: 1.5rem;
 }
 
 .lang {

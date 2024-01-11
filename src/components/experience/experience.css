@@ -1,3 +1,7 @@
+#experience {
+  padding: 3rem 0px;
+}
+
 .experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,15 +22,23 @@
   padding: 2.4rem 3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
-  transition: var(--transition);
+  /* transition: var(--transition); */
+  transition: transform 0.3s ease-in-out;
 }
 
 .experience-container > div:hover {
   /* background: transparent; */
-  background: #a6a6c2;
+  /* background: #a6a6c2; */
   /* border-color: var(--color-text-primary-variant); */
   /* backdrop-filter: blur(9px); */
   cursor: default;
+  transform: scale(1.1);
+}
+
+.dark .experience-container > div:hover {
+  background: var(--color-orange);
+  cursor: default;
+  transform: scale(1.1);
 }
 
 /* .light .experience-container > div:hover {

@@ -37,9 +37,12 @@
 
 .dark {
   --bg-color: #2c3036;
-  --color-text-primary: #a8a8b7;
-  --color-text-primary-variant: #030136;
-  --color-text-primary: #e3e3ee;
+  /* --color-text-primary: #a8a8b7; */
+  --color-text-primary-variant: #282c30;
+  /* --color-text-primary: #e3e3ee; */
+  --color-text-primary: #aab0b6;
+  --color-orange: #0b0c0c;
+  --color-orange-variant: #0b0c0c;
 }
 
 html {
@@ -50,13 +53,17 @@ html {
   display: none;
 }
 
-body {
-  font-family: 'Merriweather', serif;
-  /* background: var(--bg-color); */
-  color: var(--color-text-primary);
-  line-break: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
+.app {
+  padding-bottom: 2rem;
 }
+
+/* body {
+  font-family: 'Merriweather', serif;
+  background: #282c30;
+  color: var(--color-text-primary);
+  line-break: 1.7; */
+/* background-image: url(../src/assets/bg-texture.png); */
+/* } */
 
 /* GENERAL STYLES */
 
@@ -83,8 +90,13 @@ h1 {
 }
 
 section {
-  margin-top: 2rem;
-  padding: 1rem;
+  /* margin-top: 2rem;
+  padding: 1rem; */
+  /* background: var(--bg-color); */
+}
+
+section .dark {
+  /* background: #2c3036; */
 }
 
 section > h2,
@@ -105,11 +117,17 @@ section > h2 {
 a {
   color: var(--color-text-primary);
   transition: var(--transition);
+  font-size: 1.3rem;
 }
 
 a:hover {
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-text-primary);
+  color: var(--color-orange-variant);
+  /* border: 1px solid var(--color-text-primary); */
+}
+
+.dark a:hover {
+  color: #0b0c0c;
+  border: none;
 }
 
 .btn {
@@ -122,8 +140,6 @@ a:hover {
   border: 1px, solid, var(--color-text-primary);
   transition: var(--transition);
 }
-
-
 
 .btn:hover {
   background: var(--color-text-primary);
@@ -146,6 +162,10 @@ img {
   position: absolute;
   right: 2rem;
   top: 2rem;
+}
+
+.layout-con {
+  padding: 2rem;
 }
 
 /* MEDIA QUERIES */
